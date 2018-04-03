@@ -5,8 +5,8 @@ import Head from 'next/head';
 import startI18n from '../tools/startI18n';
 import { getTranslation } from '../tools/translationHelpers';
 
-import Title from '../components/Title';
-import Post from '../components/Post';
+import Interests from '../components/Interests';
+import AvatarContainer from '../components/AvatarContainer';
 import Skills from '../components/Skills';
 
 export default class Homepage extends Component {
@@ -37,8 +37,9 @@ export default class Homepage extends Component {
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
           </Head>
           {/* <Title /> */}
-          <Post />
+          <AvatarContainer />
           <Skills />
+          <Interests />
         </Fragment>
       </I18nextProvider>
     );

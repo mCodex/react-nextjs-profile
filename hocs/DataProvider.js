@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import data from '../data.js';
+import data from '../data';
 
-export default (WrappedComponent) => (
+export default WrappedComponent => (
   class extends Component {
     render = () => (
       <WrappedComponent data={data} {...this.props} />
     )
   }
-)
+);

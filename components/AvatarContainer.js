@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { translate } from 'react-i18next';
 
 import { Image, Header } from 'semantic-ui-react';
@@ -18,7 +18,7 @@ const styles = {
   }
 };
 
-class PictureContainer extends Component {
+class AvatarContainer extends PureComponent {
   constructor(props) {
     super(props);
     this.t = props.t;
@@ -44,4 +44,4 @@ class PictureContainer extends Component {
   }
 }
 
-export default withData(translate(['namespace1'])(PictureContainer));
+export default withData(translate(['namespace1'])(AvatarContainer));
