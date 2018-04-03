@@ -1,4 +1,4 @@
-import i18n from 'i18next'
+import i18n from 'i18next';
 
 /**
  * Initialize a i18next instance.
@@ -13,6 +13,6 @@ const startI18n = (files, lang) => i18n.init({
   ns: ['common'],
   defaultNS: 'common',
   debug: false
-})
+});
 
-export default startI18n
+export default startI18n;
