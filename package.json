@@ -1,0 +1,19 @@
+{
+  "name": "with-i18next",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "i18next": "^10.0.7",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^5.1.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-i18next": "^6.1.0",
+    "semantic-ui-react": "^0.79.0"
+  },
+  "license": "ISC"
+}
