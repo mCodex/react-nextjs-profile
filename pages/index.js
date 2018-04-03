@@ -14,23 +14,21 @@ export default class Homepage extends Component {
     //Getting language from user's browser
     const lang = req.headers['accept-language'].substring(0, 2);
 
-    console.log(lang);
     const translations = await getTranslation(
       lang,
       ['common', 'namespace1'],
       'http://localhost:3000/static/locales/'
     );
 
-    return { translations };
+    return { translations, lang };
   }
 
   constructor(props) {
     super(props);
-
-    this.i18n = startI18n(props.translations, lang);
+    this.i18n = startI18n(props.translations, this.props.lang);
   }
 
-  render(props) {
+  render() {
     return (
       <I18nextProvider i18n={this.i18n}>
         <Fragment>
