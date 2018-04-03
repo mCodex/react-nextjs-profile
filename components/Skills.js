@@ -2,7 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import { Label, Grid } from 'semantic-ui-react';
 import { sample } from 'lodash';
 
-const skills = ['NodeJS', 'React', 'React-Native', 'ExpressJS', 'Webpack', 'Serverless Framework', 'Mocha', 'MySQL', 'MongoDB', 'GraphQL', 'Python', 'GNU/Linux', 'GIT'];
+import withData from '../hocs/DataProvider';
 
 const colors = [
   'red',
@@ -13,17 +13,21 @@ const colors = [
   'teal',
   'blue'
 ];
-export default class Skills extends PureComponent {
+
+class Skills extends PureComponent {
   render() {
     return (
       <Fragment>
         <Grid stackable columns={13}>
-          {skills.map(skill =>
-            (<Grid.Column>
+          {this.props.data.skills.map(skill => (
+            <Grid.Column>
               <Label tag color={sample(colors)}>{skill}</Label>
-             </Grid.Column>))}
+            </Grid.Column>))
+          }
         </Grid>
       </Fragment>
     );
   }
 }
+
+export default withData(Skills);

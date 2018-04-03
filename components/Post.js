@@ -3,6 +3,8 @@ import { translate } from 'react-i18next';
 
 import { Image, Header } from 'semantic-ui-react';
 
+import withData from '../hocs/DataProvider';
+
 const styles = {
   container: {
     display: 'flex',
@@ -23,24 +25,23 @@ class PictureContainer extends Component {
   }
 
   render() {
+    const { data } = this.props;
     return (
       <Fragment>
         <div style={styles.container}>
           <Image
-            src="https://media.licdn.com/dms/image/C4D03AQHMLA36yoJdtA/profile-displayphoto-shrink_800_800/0?e=1527559200&v=alpha&t=HKVP9xX7zNrlsLClwawLTusZ3CgQxcUlE7gfpSL4A5o"
+            src={data.pic}
             size="small"
             circular
           />
-          <Header as="h1" style={{ marginTop: 20 }}>Mateus Andrade</Header>
+          <Header as="h1" style={{ marginTop: 20 }}>{data.fullname}</Header>
         </div>
         <div>
-          <p>
-          Hi there, my name is Mateus! I'm a brazilian developer working with web & mobile
-          </p>
+          <p>{data.description}</p>
         </div>
       </Fragment>
     );
   }
 }
 
-export default translate(['namespace1'])(PictureContainer);
+export default withData(translate(['namespace1'])(PictureContainer));
