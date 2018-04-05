@@ -3,7 +3,7 @@ import { I18nextProvider } from 'react-i18next';
 import Head from 'next/head';
 
 import startI18n from '../tools/startI18n';
-import { getTranslation } from '../tools/translationHelpers';
+import getTranslation from '../tools/translationHelpers';
 
 import Interests from '../components/Interests';
 import AvatarContainer from '../components/AvatarContainer';

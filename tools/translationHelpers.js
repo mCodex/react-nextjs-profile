@@ -9,7 +9,7 @@ import 'isomorphic-unfetch';
  * @param {string} baseUrl - Locale location.
  * @return {object} Fetched translation files.
  */
-export async function getTranslation(lang, files, baseUrl) {
+export default async function getTranslation(lang, files, baseUrl) {
   const translation = {};
 
   for (const file of files) {

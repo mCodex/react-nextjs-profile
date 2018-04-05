@@ -1,6 +1,5 @@
 import React, { PureComponent, Fragment } from 'react';
 import { List, Grid } from 'semantic-ui-react';
-import { sample } from 'lodash';
 
 import withData from '../hocs/DataProvider';
 
