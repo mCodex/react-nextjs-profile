@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills component renders correctly 1`] = `
+<div
+  className="ui stackable grid"
+>
+  <div
+    className="ui list"
+    role="list"
+  >
+    <h2
+      className="header"
+    >
+      Skills
+    </h2>
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      NodeJS
+    </div>
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      React
+    </div>
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      React-Native
+    </div>
+  </div>
+</div>
+`;
