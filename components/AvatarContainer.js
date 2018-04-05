@@ -1,5 +1,4 @@
 import React, { PureComponent, Fragment } from 'react';
-import { translate } from 'react-i18next';
 
 import { Image, Header, Flag, Button } from 'semantic-ui-react';
 
@@ -63,4 +62,4 @@ class AvatarContainer extends PureComponent {
   }
 }
 
-export default withData(translate(['namespace1'])(AvatarContainer));
+export default withData(AvatarContainer);

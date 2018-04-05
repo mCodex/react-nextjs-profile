@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "precommit": "yarn lint"
+    "precommit": "yarn lint",
+    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build"
   },
   "dependencies": {
     "babel-eslint": "^8.2.2",
