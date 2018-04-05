@@ -6,5 +6,16 @@
     "transform-runtime",
     "transform-react-inline-elements",
     ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
-  ]
+  ],
+  "env": {
+    "development": {
+      "presets": ["next/babel"]
+    },
+    "production": {
+      "presets": ["next/babel"]
+    },
+    "test": {
+      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]]
+    }
+  }
 }

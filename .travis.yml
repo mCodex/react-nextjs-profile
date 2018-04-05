@@ -6,6 +6,9 @@ before_script:
   - yarn lint
 
 script:
+  - yarn test
+
+after_script:
   - yarn build
 
 notifications:

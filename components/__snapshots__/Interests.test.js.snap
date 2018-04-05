@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interests component renders correctly 1`] = `
+<div
+  className="ui stackable grid"
+>
+  <div
+    className="ui list"
+    role="list"
+  >
+    <h2
+      className="header"
+    >
+      Interests
+    </h2>
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      Javascript
+    </div>
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      NodeJS
+    </div>
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      Blockchain
+    </div>
+  </div>
+</div>
+`;

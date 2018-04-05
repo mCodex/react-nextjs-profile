@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly 1`] = `
+<div
+  className="ui inverted vertical footer segment"
+  style={
+    Object {
+      "marginTop": 25,
+      "width": "100% ",
+    }
+  }
+>
+  <div
+    className="ui container"
+  >
+    <div
+      className="ui grid"
+    >
+      <div
+        className="row"
+        style={
+          Object {
+            "margin": 30,
+          }
+        }
+      >
+        <div
+          className="center aligned column"
+        >
+          <p>
+            Powered by 
+            <a
+              href="https://reactjs.org/"
+            >
+              React
+            </a>
+            .
+          </p>
+          <p>
+            Made with 
+            <span
+              aria-label="heart"
+              role="img"
+            >
+              ❤️
+            </span>
+             by 
+            <a
+              href="https://github.com/mCodex"
+            >
+              mCodex
+            </a>
+             and 
+            <a
+              href="https://github.com/vspedr"
+            >
+              vspedr
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

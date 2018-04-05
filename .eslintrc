@@ -6,7 +6,8 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "rules": {
     "comma-dangle": 0,
@@ -37,5 +38,5 @@
     "eqeqeq": 0,
     "no-underscore-dangle": 0
   },
-  "plugins": ["react"]
+  "plugins": ["react", "jest"]
 }
