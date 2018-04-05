@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import { translate } from 'react-i18next';
 
-import { Image, Header } from 'semantic-ui-react';
+import { Image, Header, Flag, Button } from 'semantic-ui-react';
 
 import withData from '../hocs/DataProvider';
 
@@ -15,6 +15,15 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column'
+  },
+  flagContainer: {
+    display: 'flex',
+    width: '100%',
+    flexDirection: 'row',
+    backgroundColor: '#eee',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    padding: 10
   }
 };
 
@@ -28,6 +37,18 @@ class AvatarContainer extends PureComponent {
     const { data } = this.props;
     return (
       <Fragment>
+        <div style={styles.flagContainer}>
+          {data.i18n.map(country =>
+            (
+              <Button
+                basic
+                compact
+              >
+                <Flag name={country} />
+              </Button>
+           ))
+        }
+        </div>
         <div style={styles.container}>
           <Image
             src={data.pic}

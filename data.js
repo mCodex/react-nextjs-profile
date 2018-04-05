@@ -12,5 +12,9 @@ export default {
     'Javascript',
     'NodeJS',
     'Blockchain'
+  ],
+  i18n: [
+    'us',
+    'br'
   ]
 };
