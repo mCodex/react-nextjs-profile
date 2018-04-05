@@ -14,7 +14,8 @@ const styles = {
     backgroundColor: '#eee',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginBottom: 20
   },
   flagContainer: {
     display: 'flex',
@@ -56,9 +57,6 @@ class AvatarContainer extends PureComponent {
             circular
           />
           <Header as="h1" style={{ marginTop: 20 }}>{data.fullname}</Header>
-        </div>
-        <div>
-          <p>{data.description}</p>
         </div>
       </Fragment>
     );

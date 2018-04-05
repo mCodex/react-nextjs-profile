@@ -3,12 +3,15 @@ import { I18nextProvider } from 'react-i18next';
 import Head from 'next/head';
 import ReactGA from 'react-ga';
 
+import { Grid } from 'semantic-ui-react';
 import startI18n from '../tools/startI18n';
 import getTranslation from '../tools/translationHelpers';
 
 import Interests from '../components/Interests';
 import AvatarContainer from '../components/AvatarContainer';
 import Skills from '../components/Skills';
+import Description from '../components/Description';
+import Footer from '../components/Footer';
 
 import withData from '../hocs/DataProvider';
 
@@ -31,7 +34,13 @@ class Homepage extends Component {
     this.i18n = startI18n(props.translations, this.props.lang);
 
     // Google Analytics setup
+
     const { gaTrackingId } = this.props.data;
+
+    if (!gaTrackingId) {
+      return;
+    }
+
     ReactGA.initialize(gaTrackingId);
   }
 
@@ -49,8 +58,22 @@ class Homepage extends Component {
           </Head>
           {/* <Title /> */}
           <AvatarContainer />
-          <Skills />
-          <Interests />
+          <Grid
+            stackable
+            columns={3}
+            divided
+          >
+            <Grid.Column width={9}>
+              <Description />
+            </Grid.Column>
+            <Grid.Column width={3}>
+              <Skills />
+            </Grid.Column>
+            <Grid.Column width={4}>
+              <Interests />
+            </Grid.Column>
+          </Grid>
+          <Footer />
         </Fragment>
       </I18nextProvider>
     );

@@ -1,0 +1,23 @@
+
+import React, { PureComponent } from 'react';
+
+import { Container, Grid } from 'semantic-ui-react';
+
+export default class extends PureComponent {
+  render() {
+    return (
+      <div className="ui inverted vertical footer segment" style={{ width: '100% ', marginTop: 25 }}>
+        <Container>
+          <Grid>
+            <Grid.Row style={{ margin: 30 }}>
+              <Grid.Column textAlign="center">
+                <p>Powered by <a href="https://reactjs.org/">React</a>.</p>
+                <p>Made with <span role="img" aria-label="heart">❤️</span> by <a href="https://github.com/mCodex">mCodex</a> and <a href="https://github.com/vspedr">vspedr</a>.</p>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Container>
+      </div>
+    );
+  }
+}
