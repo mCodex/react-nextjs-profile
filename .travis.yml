@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "node"
+
+before_script:
+  - yarn lint
+
+script:
+  - yarn build
+
+notifications:
+  email: false
