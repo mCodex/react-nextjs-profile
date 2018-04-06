@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvatarContainer component renders correctly 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "backgroundColor": "#eee",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <button
+      className="ui basic compact button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <i
+        className="br flag"
+      />
+    </button>
+    <button
+      className="ui basic compact button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <i
+        className="us flag"
+      />
+    </button>
+  </div>,
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#eee",
+        "display": "flex",
+        "flex": 1,
+        "flexDirection": "column",
+        "height": "50vh",
+        "justifyContent": "center",
+        "marginBottom": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <img
+      className="ui small circular image"
+      src="https://semantic-ui.com/images/avatar2/large/matthew.png"
+    />
+    <h1
+      className="ui header"
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+    >
+      John Doe
+    </h1>
+  </div>,
+]
+`;

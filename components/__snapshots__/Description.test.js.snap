@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description component renders correctly 1`] = `
+<div
+  className="ui text fluid container"
+>
+  <h2
+    className="ui header"
+  >
+    <span
+      className={undefined}
+      style={undefined}
+    >
+      description
+    </span>
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tortor vel quam fringilla placerat. Proin elementum felis metus. Nullam ut eleifend leo. Morbi consectetur risus vitae vulputate condimentum. Nam vitae diam sapien. Vestibulum sed elementum diam. Ut placerat quis augue sed tristique. Donec convallis sem erat, nec iaculis dolor sagittis a. Maecenas sagittis euismod orci sed dapibus.
+  </p>
+</div>
+`;
