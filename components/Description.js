@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react';
 import { Header, Container } from 'semantic-ui-react';
 
 import withData from '../hocs/DataProvider';
+import { Translate } from '../tools/i18n';
 
 class Description extends PureComponent {
   render() {
@@ -12,7 +13,9 @@ class Description extends PureComponent {
         fluid
         text
       >
-        <Header as="h2">Description</Header>
+        <Header as="h2">
+          <Translate value="profile.description" />
+        </Header>
         <p>{data.description}</p>
       </Container>
     );

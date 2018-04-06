@@ -3,6 +3,7 @@ import React, { PureComponent, Fragment } from 'react';
 import { Image, Header, Flag, Button } from 'semantic-ui-react';
 
 import withData from '../hocs/DataProvider';
+import { availableCountries, setLocale } from '../tools/i18n';
 
 const styles = {
   container: {
@@ -28,26 +29,16 @@ const styles = {
 };
 
 class AvatarContainer extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.t = props.t;
-  }
-
   render() {
     const { data } = this.props;
     return (
       <Fragment>
         <div style={styles.flagContainer}>
-          {data.i18n.map(country =>
-            (
-              <Button
-                basic
-                compact
-              >
-                <Flag name={country} />
-              </Button>
-           ))
-        }
+          {availableCountries.map(country => (
+            <Button basic compact onClick={() => setLocale(country.locale)}>
+              <Flag name={country.code} />
+            </Button>
+          ))}
         </div>
         <div style={styles.container}>
           <Image
