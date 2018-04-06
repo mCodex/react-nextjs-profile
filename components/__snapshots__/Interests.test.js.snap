@@ -11,7 +11,12 @@ exports[`Interests component renders correctly 1`] = `
     <h2
       className="header"
     >
-      Interests
+      <span
+        className={undefined}
+        style={undefined}
+      >
+        interests
+      </span>
     </h2>
     <div
       className="item"
