@@ -11,8 +11,8 @@ export default class extends PureComponent {
           <Grid>
             <Grid.Row style={{ margin: 30 }}>
               <Grid.Column textAlign="center">
-                <p>Powered by <a href="https://reactjs.org/">React</a>.</p>
-                <p>Made with <span role="img" aria-label="heart">❤️</span> by <a href="https://github.com/mCodex">mCodex</a> and <a href="https://github.com/vspedr">vspedr</a>.</p>
+                <p>Powered by <a href="https://reactjs.org/">React</a> / <a href="https://github.com/zeit/next.js/">NextJS</a>.</p>
+                <p>Made with <span role="img" aria-label="heart">❤️</span> by <a href="https://github.com/mCodex">mCodex</a> & <a href="https://github.com/vspedr">vspedr</a>.</p>
               </Grid.Column>
             </Grid.Row>
           </Grid>
