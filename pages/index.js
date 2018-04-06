@@ -10,6 +10,8 @@ import Interests from '../components/Interests';
 import AvatarContainer from '../components/AvatarContainer';
 import Skills from '../components/Skills';
 import Description from '../components/Description';
+import Projects from '../components/Projects';
+
 import Footer from '../components/Footer';
 
 import withData from '../hocs/DataProvider';
@@ -59,12 +61,9 @@ class Homepage extends Component {
                 <Interests />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row columns={2}>
+            <Grid.Row>
               <Grid.Column>
-                Text World
-              </Grid.Column>
-              <Grid.Column>
-                Text World
+                <Projects />
               </Grid.Column>
             </Grid.Row>
           </Grid>
