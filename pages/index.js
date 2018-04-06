@@ -41,22 +41,32 @@ class Homepage extends Component {
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
+            <link rel="icon" href="/static/favicon.ico" />
           </Head>
           <AvatarContainer />
           <Grid
             stackable
-            columns={3}
-            divided
+
           >
-            <Grid.Column width={9}>
-              <Description />
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Skills />
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Interests />
-            </Grid.Column>
+            <Grid.Row columns={3} divided>
+              <Grid.Column width={9}>
+                <Description />
+              </Grid.Column>
+              <Grid.Column width={3}>
+                <Skills />
+              </Grid.Column>
+              <Grid.Column width={4}>
+                <Interests />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={2}>
+              <Grid.Column>
+                Text World
+              </Grid.Column>
+              <Grid.Column>
+                Text World
+              </Grid.Column>
+            </Grid.Row>
           </Grid>
           <Footer />
         </Fragment>
