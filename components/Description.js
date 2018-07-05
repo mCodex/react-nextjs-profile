@@ -16,7 +16,9 @@ class Description extends PureComponent {
         <Header as="h2">
           <Translate value="profile.description" />
         </Header>
-        <p>{data.description}</p>
+        <p>
+          {data.description}
+        </p>
       </Container>
     );
   }

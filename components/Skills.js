@@ -14,8 +14,11 @@ class Skills extends PureComponent {
             <List.Header as="h2">
               <Translate value="profile.skills" />
             </List.Header>
-            {data.skills.map(skill =>
-              <List.Item>{skill}</List.Item>)
+            {data.skills.map(skill => (
+              <List.Item>
+                {skill}
+              </List.Item>
+            ))
             }
           </List>
         </Grid>
