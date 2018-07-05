@@ -1,6 +1,8 @@
 import React, { PureComponent, Fragment } from 'react';
 
-import { Image, Header, Flag, Button } from 'semantic-ui-react';
+import {
+  Image, Header, Flag, Button
+} from 'semantic-ui-react';
 
 import withData from '../hocs/DataProvider';
 import { availableCountries, setLocale } from '../tools/i18n';
@@ -46,7 +48,9 @@ class AvatarContainer extends PureComponent {
             size="small"
             circular
           />
-          <Header as="h1" style={{ marginTop: 20 }}>{data.fullname}</Header>
+          <Header as="h1" style={{ marginTop: 20 }}>
+            {data.fullname}
+          </Header>
         </div>
       </Fragment>
     );
