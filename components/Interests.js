@@ -14,8 +14,11 @@ class Interests extends PureComponent {
             <List.Header as="h2">
               <Translate value="profile.interests" />
             </List.Header>
-            {data.interests.map(interest =>
-              <List.Item>{interest}</List.Item>)
+            {data.interests.map(interest => (
+              <List.Item>
+                {interest}
+              </List.Item>
+            ))
             }
           </List>
         </Grid>

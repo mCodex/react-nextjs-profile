@@ -10,6 +10,7 @@ export default WrappedComponent => (
 
       return { lang };
     }
+
     render = () => (
       <WrappedComponent data={data} {...this.props} />
     )
