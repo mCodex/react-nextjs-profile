@@ -16,18 +16,19 @@ import withData from '../hocs/DataProvider';
 class Homepage extends Component {
   constructor(props) {
     super(props);
-    initI18n(this.props.lang);
+    const { lang, data: { gaTrackingId } } = this.props;
+
+    initI18n(lang);
 
     // Google Analytics setup
-
-    const { gaTrackingId } = this.props.data;
     if (gaTrackingId) {
       ReactGA.initialize(gaTrackingId);
     }
   }
 
   componentDidMount() {
-    if (this.props.data.gaTrackingId) {
+    const { data: { gaTrackingId } } = this.props;
+    if (gaTrackingId) {
       ReactGA.pageview(window.location.pathname, { title: 'Profile' });
     }
   }
